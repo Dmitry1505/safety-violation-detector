@@ -1,0 +1,16 @@
+data:
+  train_dir: "data/processed/train"
+  val_dir: "data/processed/val"
+  test_video_path: "data/raw/test_video.mp4"
+
+model:
+  name: "resnet18"
+  pretrained: true
+  num_classes: 2
+
+train:
+  batch_size: 32
+  epochs: 20
+  learning_rate: 0.001
+  optimizer: "adam"
+  save_dir: "models/checkpoints"
